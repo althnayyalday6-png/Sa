@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/theme.css">
+<link rel="stylesheet" href="/css/app.css">
+<title>أوربت ستور — Orbit Store</title>
+</head>
+<body>
+<header class="nav">
+  <div class="brand"><img src="/assets/logo.png" alt="">
+    <div>أوربت ستور<small>ORBIT</small></div>
+  </div>
+  <nav id="navLinks">
+    <button class="nb on" data-view="store">المتجر</button>
+    <button class="nb" data-view="orders" hidden>طلباتي</button>
+    <a class="nb" id="dashLink" href="/dashboard" hidden>لوحة التحكم</a>
+  </nav>
+  <div id="userBox"></div>
+</header>
+<main class="wrap">
+  <section id="store" class="stack"></section>
+  <section id="orders" class="stack" hidden></section>
+</main>
+<div id="modal" class="modal" hidden></div>
+<div id="toast" hidden></div>
+<script type="module" src="/js/app.js"></script>
+</body>
+</html>
